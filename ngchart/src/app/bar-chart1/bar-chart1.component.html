@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <div style="display: block">
       <canvas baseChart
               [datasets]="barChartData"
@@ -8,16 +8,19 @@
               [chartType]="barChartType">
       </canvas>
     </div>
-</div>
+</div> -->
 
  
 <!-- <div style="text-align:center">
     <h2>
-        Country list from local json file...
+        financial support by departement
     </h2>
-    <ul *ngFor="let item of countryList">
+    <ul *ngFor="let item of dptList">
        <li>
-          <h3>Country Name :{{item.name}}, Code: {{item.code}}</h3>
+          <h3>
+              dpt Code :{{item.fields}}
+             {{ item.key }} - {{ item.value }} 
+          </h3>
        </li>
     </ul>
 </div> -->
