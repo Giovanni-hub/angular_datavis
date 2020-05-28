@@ -1,0 +1,6 @@
+<label for="radiogroup">Ville</label><input checked type="radio" name="radiogroup" [value]="'ville'" (change)="onSelectionChange('ville')">
+<label for="radiogroup">Departement</label><input type="radio" name="radiogroup" [value]="'departement'" (change)="onSelectionChange('departement')">
+<div style="display: block" *ngIf="barChartData">
+    <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
+      </canvas>
+</div>
