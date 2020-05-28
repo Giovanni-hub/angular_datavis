@@ -44,6 +44,8 @@ export class Map2Component implements OnInit {
     var vectorData = new VectorSource;
 
     for (let i = 0; i < data.length; i++) {
+      //console.log(data[i].fields.montant_vote);
+
       this.jsonData = data[i].fields.wgs84;
       this.jsonPoint = fromLonLat(this.jsonData);
 
@@ -52,7 +54,7 @@ export class Map2Component implements OnInit {
 
       var pointFeature = new Feature({
       geometry: lonLat,
-      weight:20
+      weight: data[i].fields.montant_vote
       });
       
       vectorData.addFeature(pointFeature);

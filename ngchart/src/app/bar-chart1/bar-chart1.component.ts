@@ -38,7 +38,7 @@ export class BarChart1Component implements OnInit {
   // console.log(data);
   for(var i = 0; i < data.length; i++) {
     var obj = data[i];
-    console.log(obj.fields.adresse_administrative_code_departement_du_tiers_beneficiaire);
+    //console.log(obj.fields.adresse_administrative_code_departement_du_tiers_beneficiaire);
   }  
   }
 }
