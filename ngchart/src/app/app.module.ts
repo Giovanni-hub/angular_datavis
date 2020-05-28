@@ -10,12 +10,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { Routes, RouterModule } from '@angular/router';
 
+import { Map1Component } from './map1/map1.component';
+import { Map2Component } from './map2/map2.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BarChart1Component,
-    ChartComponent
+    ChartComponent,
+    Map1Component,
+    Map2Component
   ],
   imports: [
     BrowserModule,

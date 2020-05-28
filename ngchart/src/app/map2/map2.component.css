@@ -1,0 +1,9 @@
+#part2 {
+    display: inline-block;
+}
+
+.map2 {
+    height: 400px;
+    width: 400px;
+    border: solid blue 1px;
+}
